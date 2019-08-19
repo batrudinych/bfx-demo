@@ -1,5 +1,11 @@
 module.exports = {
-  broadcastKey: 'common',
+  defaults: {
+    broadcastKey: 'common',
+    announceInterval: 1000,
+    requestOptions: {
+      timeout: 5000
+    }
+  },
   grapes: {
     host: '127.0.0.1',
     ports: [
@@ -16,9 +22,5 @@ module.exports = {
         api: 30003
       }
     ]
-  },
-  announceInterval: 1000,
-  requestOptions: {
-    timeout: 5000
   }
 }
